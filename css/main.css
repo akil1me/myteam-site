@@ -370,6 +370,44 @@ path {
   margin: 0 auto;
 }
 
+.section-forth {
+  background-image: url("../img/bg-img-get-start.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 76px 0;
+  background-color: #F67E7E;
+
+}
+
+.get-start {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.get-start-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012F34;
+
+}
+
+.contakt-us-2 {
+  color: #012F34;
+  border: 2px solid #012F34;
+  transition: all 0.3s ease;
+}
+
+.contakt-us-2:hover {
+  color: white;
+  background-color: #012F34;
+}
+
+.contakt-us-2:active {
+  background-color: #012f34bc;
+}
+
 @media only screen and (max-width:1057px) {
   .section-first {
     background-image: none;
@@ -432,6 +470,16 @@ path {
 
   }
 
+
+  .get-start-title {
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .contakt-us-2 {
+    display: block;
+  }
 }
 
 @media only screen and (max-width:689px) {
@@ -489,7 +537,18 @@ path {
     line-height: 32px;
   }
 
+  .contakt-us-2 {
+    display: block;
+  }
 
+  .get-start {
+    flex-direction: column;
+  }
+
+  .get-start-title {
+    text-align: center;
+    margin-bottom: 24px;
+  }
 }
 
 @media only screen and (max-width:560px) {
@@ -556,4 +615,7 @@ path {
     margin-top: 16px;
   }
 
+  .contakt-us-2 {
+    display: block;
+  }
 }
