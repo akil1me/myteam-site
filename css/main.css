@@ -232,6 +232,74 @@ path {
   line-height: 28px;
 }
 
+.section-second {
+  background-image: url("../img/bg-img-3.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: #012F34;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.product-title-span {
+  background-color: #F67E7E;
+  margin: 0;
+  margin-bottom: 54px;
+}
+
+.ptroduct-title {
+  max-width: 445px;
+}
+
+.ptroduct-title h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.product-content {
+  margin-top: 54px;
+}
+
+.product-items {
+  display: flex;
+}
+
+.product-items+.product-items {
+  margin-top: 32px;
+}
+
+.product-items-content {
+  max-width: 445px;
+  margin-left: 23px;
+}
+
+.product-items-content h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #F67E7E;
+  margin-bottom: 16px;
+
+}
+
+.product-items-content p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
 
 @media only screen and (max-width:1057px) {
   .section-first {
@@ -258,6 +326,25 @@ path {
     flex-direction: column;
     text-align: center;
   }
+
+  .product {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+
+
+  }
+
+  .product-title-span {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .ptroduct-title {
+    margin-bottom: 64px;
+  }
+
+
 }
 
 @media only screen and (max-width:689px) {
@@ -303,6 +390,19 @@ path {
     font-size: 15px;
     line-height: 28px;
   }
+
+  .section-second {
+    background-position: right top;
+
+  }
+
+  .ptroduct-title h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+
 }
 
 @media only screen and (max-width:560px) {
@@ -345,6 +445,28 @@ path {
 
   .best-talant {
     background-position: cover 450px;
+  }
+
+  .product {
+    align-items: flex-start;
+  }
+
+  .ptroduct-title {
+    margin-bottom: 56px;
+  }
+
+  .ptroduct-title h3 {
+    max-width: 240px;
+  }
+
+  .product-items {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-items-content {
+    margin-top: 16px;
   }
 
 }
