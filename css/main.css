@@ -408,6 +408,78 @@ path {
   background-color: #012f34bc;
 }
 
+.site-footer {
+  background-color: #002529;
+  padding: 48px 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+
+}
+
+.logo-footer {
+  display: block;
+  width: 160px;
+  height: 40px;
+}
+
+.footer-menu-list {
+  margin-top: 25px;
+  display: flex;
+}
+
+.footer-menu-items+.footer-menu-items {
+  margin-left: 40px;
+}
+
+.footer-address {
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-left: 125px;
+}
+
+.footer-address p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.footer-address a {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.icon-links a+a {
+  margin-left: 16px;
+}
+
+.footer-right-text {
+  font-size: 15px;
+  line-height: 25px;
+  text-align: right;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-top: 51px;
+}
+
 @media only screen and (max-width:1057px) {
   .section-first {
     background-image: none;
@@ -480,6 +552,39 @@ path {
   .contakt-us-2 {
     display: block;
   }
+}
+
+@media only screen and (max-width:781px) {
+  .footer {
+    flex-direction: column;
+  }
+
+
+  .footer-left {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .logo-footer {
+    width: 95px;
+    height: 24px;
+  }
+
+  .footer-menu-items+.footer-menu-items {
+    margin-left: 24px;
+  }
+
+  .footer-address {
+    margin: 0;
+  }
+
+  .footer-right {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }
 
 @media only screen and (max-width:689px) {
@@ -617,5 +722,38 @@ path {
 
   .contakt-us-2 {
     display: block;
+  }
+}
+
+@media only screen and (max-width:444px) {
+
+  .footer-left {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-footer {
+    margin: 0 auto;
+  }
+
+  .footer-menu {
+    margin-bottom: 24px;
+  }
+
+  .logo-footer {
+    width: 95px;
+    height: 24px;
+  }
+
+  .footer-right {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-right-text {
+    margin-top: 16px;
   }
 }
