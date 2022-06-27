@@ -791,6 +791,10 @@ path {
   .directors__list {
     justify-content: center;
   }
+
+  .directors__items {
+    margin-bottom: 56px;
+  }
 }
 
 @media only screen and (max-width:689px) {
