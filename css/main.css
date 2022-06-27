@@ -60,6 +60,7 @@
   text-decoration: none;
   background-color: transparent;
   border: none;
+  transition: all 0.4s ease;
 }
 
 body {
@@ -480,6 +481,50 @@ path {
   margin-top: 51px;
 }
 
+.about-section {
+  background-color: #014E56;
+  padding-top: 47px;
+  padding-bottom: 120px;
+  background-image: url("../img/bg-img-6.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__title {
+  max-width: 350px;
+}
+
+.about__title h2 {
+  font-size: 64px;
+  line-height: 100px;
+  color: #FFFFFF;
+}
+
+.about-text-span {
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #F67E7E;
+  margin-bottom: 40px;
+}
+
+.about__text {
+  max-width: 730px;
+}
+
+.about__text-p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
 @media only screen and (max-width:1057px) {
   .section-first {
     background-image: none;
@@ -551,6 +596,33 @@ path {
 
   .contakt-us-2 {
     display: block;
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  .about-section {
+    padding-top: 37px;
+    padding-bottom: 100px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+
+
+  .about-text-span {
+    display: none;
+    margin: 0;
+  }
+
+  .about__text {
+    width: 100%;
+  }
+
+  .about__text-p {
+    font-size: 15px;
+    text-align: center;
   }
 }
 
@@ -723,6 +795,15 @@ path {
   .contakt-us-2 {
     display: block;
   }
+
+  .about__title h2 {
+    font-size: 40px;
+  }
+
+  .about-section {
+    background-position: right 300px;
+  }
+
 }
 
 @media only screen and (max-width:444px) {
