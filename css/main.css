@@ -648,6 +648,29 @@ path {
   margin-left: 18px;
 }
 
+.clients-section {
+  padding: 140px 0;
+  background-color: #012f34;
+  background-image: url("../img/clients-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.clients__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.clients__logo {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media only screen and (max-width:1057px) {
   .section-first {
     background-image: none;
@@ -746,6 +769,46 @@ path {
   .about__text-p {
     font-size: 15px;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width:913px) {
+  .clients-section {
+    padding: 100px 0;
+    background-image: none;
+    background-image: url("../img/clients-bg-2.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+  .clients__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .clients-logo-1 {
+    width: 103px;
+    height: 17px;
+  }
+
+  .clients-logo-2 {
+    width: 124px;
+    height: 16px;
+  }
+
+  .clients-logo-3 {
+    width: 120px;
+    height: 17px;
+  }
+
+  .clients-logo-4 {
+    width: 103px;
+    height: 17px;
+  }
+
+  .clients-logo-5 {
+    width: 80px;
+    height: 40px;
   }
 }
 
@@ -866,6 +929,17 @@ path {
   }
 }
 
+@media only screen and (max-width:614px) {
+  .clients__logo {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .clients__logo img+img {
+    margin-top: 57px;
+  }
+}
+
 @media only screen and (max-width:560px) {
   .site-header {
     padding: 48px 0;
@@ -975,6 +1049,14 @@ path {
 
   .footer-right-text {
     margin-top: 16px;
+  }
+
+  .clients-section {
+    padding: 88px 0;
+    background-image: none;
+    background-image: url("../img/clients-bg-3.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
   }
 }
 
